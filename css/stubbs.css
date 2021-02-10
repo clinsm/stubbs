@@ -1,0 +1,59 @@
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 10px 0 10px ;
+  width: 100%;
+  min-height: 5vh;
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: 0px 1px 13px -10px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 1px 13px -10px rgba(0,0,0,0.28);
+  box-shadow: 0px 1px 13px -10px rgba(0,0,0,0.28);
+}
+.logo{
+  text-align: center;
+  width: 300px;
+}
+.logo a{
+  align-items: center;
+  margin: auto;
+  line-height: 50px;
+}
+.logo img{
+  height: 50px;
+  width: auto;
+  margin: auto 30px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.logo span{
+  margin: auto;
+  color: rgb(82, 82, 82);
+  font-size: 25px;
+}
+.nav-buttons{
+  margin: auto;
+  text-align: center;
+}
+.nav-buttons a{
+  margin-left: 50px;
+  color: red;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+*{
+  font-family: 'Heebo', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+/*screens: start of greater than 1024 screens*/
+@media only screen and (min-width: 1590px) {
+  /*Navingation bar*/
+  .logo{
+    text-align: center;
+    width: 30%;
+  }
+}
