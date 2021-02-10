@@ -67,8 +67,10 @@ a{
   .menu-button-holder span{
     display: inline-block;
     height: 10px;
-    width: 50px;
+    width: 80px;
     background: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .nav-buttons{
     display: none;
@@ -78,7 +80,6 @@ a{
     margin: auto;
   }
   .logo{
-    background: blue;
     width: 50%;
   }
   .logo a{
@@ -92,6 +93,5 @@ a{
     height: 60px;
   }
   .menu-button-holder{
-    background: green;
   }
 }
