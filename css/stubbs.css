@@ -61,10 +61,37 @@ a{
 /*screens: start of smaller than 500 screens*/
 @media only screen and (max-width: 1024px) {
   /*Navingation*/
+  nav{
+    min-height: 10vh;
+  }
   .menu-button-holder span{
     display: inline-block;
-    height: 15px;
-    width: 20px;
+    height: 10px;
+    width: 50px;
     background: red;
+  }
+  .nav-buttons{
+    display: none;
+  }
+  .menu-button{
+    width: 45%;
+    margin: auto;
+  }
+  .logo{
+    background: blue;
+    width: 50%;
+  }
+  .logo a{
+    width: 100%;
+    line-height: 60px;
+  }
+  .logo span{
+    font-size: 40px;
+  }
+  .logo img{
+    height: 60px;
+  }
+  .menu-button-holder{
+    background: green;
   }
 }
