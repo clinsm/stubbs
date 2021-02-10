@@ -20,15 +20,35 @@
         <a href="profile.html">news</a>
       </div>
       <div class="menu-button" align="right">
-        <div class="menu-button-holder">
-          <span></span> <br>
-          <span></span> <br>
-          <span></span>
+        <div class="menu-button-holder" id="menu-icon-holder">
+          <span class="line1"></span> <br>
+          <span class="line2"></span> <br>
+          <span class="line3"></span>
         </div>
       </div>
     </nav>
   </body>
   <style media="screen">
+  .change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
 
+.change .line2 {opacity: 0;}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
   </style>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+    $('#menu-icon-holder').click(function(){
+      $(this).toggleClass('change');
+    });
+  });
+  </script>
 </html>
