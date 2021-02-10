@@ -25,20 +25,31 @@
           <span class="line2"></span> <br>
           <span class="line3"></span>
         </div>
+        <br>
+        <div class="mobile-menu" align="center" style="display: none;">
+          <a class="mobile-link" href="about.html">about</a> <br>
+          <a class="mobile-link" href="shop.html">events</a>
+          <a class="mobile-link" href="stories.html">the team</a>
+          <a class="mobile-link" href="profile.html">news</a>
+        </div>
       </div>
     </nav>
   </body>
   <style media="screen">
   .change .line1 {
+    background: #f5f5f5;
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-15px, 20px) scale(0.5);
+  transition: 0.3s ease-in-out;
 }
 
 .change .line2 {opacity: 0;}
 
 .change .line3 {
+  background: #f5f5f5;
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-15px, -20px) scale(0.5);
+  transition: 0.3s ease-in-out;
 }
   </style>
 
@@ -46,8 +57,20 @@
   <script type="text/javascript">
 
   $(document).ready(function(){
+    //$('.mobile-menu').css("display", "none");
     $('#menu-icon-holder').click(function(){
       $(this).toggleClass('change');
+      //if toggled then show openMenu
+      var shown = $('#menu-icon-holder').hasClass("change");
+        if(shown){
+         $('.menu-button').css("background-color", "rgba(242, 36, 36, 0.7)");
+         $('.menu-button').css("position", "absolute");
+         $('.mobile-menu').css("display", "block");
+        }else{
+         $('.menu-button').css("background-color", "rgba(242, 36, 36, 0.0)");
+         $('.menu-button').css("position", "relative");
+         $('.mobile-menu').css("display", "none");
+      }
     });
   });
   </script>
