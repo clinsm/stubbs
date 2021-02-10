@@ -111,6 +111,21 @@ a{
     width: 50px;
     transition: all 0.3s ease;
   }
+  .change .line1 {
+    background: #f5f5f5;
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-15px, 20px) scale(0.5);
+    transition: 0.3s ease-in-out;
+  }
+
+  .change .line2 {opacity: 0;}
+
+  .change .line3 {
+    background: #f5f5f5;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-15px, -20px) scale(0.5);
+    transition: 0.3s ease-in-out;
+  }
   .mobile-link{
     width: 100%;
     display: inline-block;
