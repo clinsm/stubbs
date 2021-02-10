@@ -59,7 +59,7 @@ a{
 }
 
 /*screens: start of smaller than 500 screens*/
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   /*Navingation*/
   .menu-button-holder span{
     display: inline-block;
