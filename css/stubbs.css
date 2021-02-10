@@ -93,5 +93,6 @@ a{
     height: 60px;
   }
   .menu-button-holder{
+    margin-right: 1vh;
   }
 }
