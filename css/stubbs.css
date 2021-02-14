@@ -55,6 +55,12 @@ a{
   left: 0;
   right: 0;
 }
+.bg-holder{
+  background-image: url("/stubbs/img/bg/home-1.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 768px;
+}
 #highlights{
   position: relative;
   height: 800px;
@@ -153,5 +159,11 @@ a{
   .mobile-menu{
     margin-top: 20%;
     margin-bottom: 20%;
+  }
+  .bg-holder{
+    background-image: url("/stubbs/img/bg/mobile-home-1.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 848px;
   }
 }
