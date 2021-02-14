@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <link href="css/stubbs.css" rel="stylesheet">
-    <title></title>
+    <title>Stubbs FC - Home</title>
   </head>
   <body>
     <nav>
       <div class="logo">
         <a href="./">
           <img src="img/logo/logo.jpg" alt="Stubbs logo">
-          <span>Stubbs FC</span>
+          <span id="logo-label">Stubbs FC</span>
         </a>
       </div>
       <div class="nav-buttons">
@@ -34,6 +34,31 @@
         </div>
       </div>
     </nav>
+    <section id="intro">
+      <div class="bg-holder">
+        <img src="img/bg/home-1.svg" alt="">
+      </div>
+      <div class="explore-button" align = "center">
+        <button type="button" name="button">Explore</button>
+      </div>
+    </section>
+    <section id="highlights">
+      <div class="highlight-label" align = "center">
+        <a href="#">Highlights</a>
+      </div>
+      <div class="upcoming-teams">
+        <div class="teamX">
+          so and so
+        </div>
+        <div class="vs">
+          vs
+        </div>
+        <div class="teamX">
+          so and so
+        </div>
+      </div>
+    </section>
+
   </body>
   <style media="screen">
   .change .line1 {
@@ -72,6 +97,24 @@
          $('.mobile-menu').css("display", "none");
       }
     });
+    //scroll to hide menu
+    var nav = document.getElementsByTagName("nav")[0];
+    var logo_label = document.getElementById("logo-label");
+    if (window.innerWidth > 1024) {
+      window.addEventListener("scroll",function(){
+        if(window.pageYOffset > 100){
+         nav.style.background = "white";
+         nav.style.boxShadow = "0px 1px 13px -10px rgba(0,0,0,0.28)";
+         logo_label.style.color = "rgb(82, 82, 82)";
+        }
+        else if(window.pageYOffset < 100){
+          nav.style.background = "0";
+          nav.style.boxShadow = "0px 1px 13px -10px rgba(0,0,0,0.0)";
+          logo_label.style.color = "#fefefe";
+        }
+
+      },false);
+    }
   });
   </script>
 </html>
