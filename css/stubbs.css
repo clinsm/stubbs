@@ -1,5 +1,5 @@
 nav{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 5;
@@ -8,9 +8,7 @@ nav{
   min-height: 5vh;
   display: flex;
   align-items: center;
-  -webkit-box-shadow: 0px 1px 13px -10px rgba(0,0,0,0.28);
-  -moz-box-shadow: 0px 1px 13px -10px rgba(0,0,0,0.28);
-  box-shadow: 0px 1px 13px -10px rgba(0,0,0,0.28);
+
 }
 .logo{
   text-align: center;
@@ -30,7 +28,7 @@ nav{
 }
 .logo span{
   margin: auto;
-  color: rgb(82, 82, 82);
+  color: #fefefe;
   font-size: 25px;
 }
 .nav-buttons{
@@ -45,9 +43,21 @@ nav{
 }
 *{
   font-family: 'Heebo', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 a{
   text-decoration: none;
+}
+#intro{
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#highlights{
+  position: relative;
+  height: 800px;
 }
 /*screens: start of greater than 1024 screens*/
 @media only screen and (min-width: 1590px) {
