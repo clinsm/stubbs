@@ -60,6 +60,29 @@ a{
   background-size: 100% auto;
   background-repeat: no-repeat;
   height: 768px;
+  display: flex;
+  align-items: center;
+}
+.bg-holder img{
+  margin:5vh auto;
+  width: auto;
+  height: 700px;
+  background: blue;
+}
+.big-intro-text{
+  background: red;
+  font-size: 100px;
+  width: 100%;
+  position: absolute;
+
+}
+.big-intro-text span{
+  background: green;
+  text-align: left;
+  max-width: 800px;
+  height: auto;
+  display: inline-block;
+  vertical-align: text-bottom;
 }
 #highlights{
   position: relative;
