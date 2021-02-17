@@ -64,24 +64,31 @@ a{
   align-items: center;
 }
 .bg-holder img{
-  margin:5vh auto;
+  margin: 25vh;
   width: auto;
   height: 700px;
-  background: blue;
-}
-.big-intro-text{
-  background: red;
-  font-size: 100px;
-  width: 100%;
-  position: absolute;
+  position: relative;
+  z-index: 2;
 
 }
+.big-intro-text{
+  font-size: 150px;
+  width: 100%;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 0;
+}
+.big-intro-text div{
+  max-width: 1000px;
+  margin: auto;
+}
+
 .big-intro-text span{
-  background: green;
-  text-align: left;
+
+  text-align: right;
   max-width: 800px;
   height: auto;
-  display: inline-block;
+  display: block;
   vertical-align: text-bottom;
 }
 #highlights{
