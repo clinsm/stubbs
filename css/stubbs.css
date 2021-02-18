@@ -96,6 +96,8 @@ a{
   text-align: center;
 }
 .explore-button{
+  position: relative;
+  top: -40%;
   background: red;
   width: auto;
   display: inline-block;
@@ -223,7 +225,23 @@ a{
     margin: auto;
     width: auto;
     height: 1200px;
-    position: relative;
-    z-index: 2;
+  }
+
+  .big-intro-text{
+    font-size: 200px;
+  }
+  .big-intro-text div{
+    max-width: 1000px;
+    padding: 5%;
+    margin: auto;
+  }
+  .explore-button{
+    padding: 10px 50px;
+    font-size: 40px;
+  }
+  .down-arrow{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
   }
 }
