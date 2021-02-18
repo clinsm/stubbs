@@ -130,7 +130,7 @@ a{
   }
 }
 
-/*screens: start of smaller than 500 screens*/
+/*screens: start of smaller than 1024 screens*/
 @media only screen and (max-width: 1024px) {
   /*Navingation*/
   nav{
@@ -218,5 +218,12 @@ a{
     background-size: 100% auto;
     background-repeat: no-repeat;
     height: 1484px;
+  }
+  .bg-holder img{
+    margin: auto;
+    width: auto;
+    height: 1200px;
+    position: relative;
+    z-index: 2;
   }
 }
