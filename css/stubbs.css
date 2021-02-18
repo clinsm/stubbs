@@ -115,6 +115,7 @@ a{
   width: 20px;
   margin: 5px;
   transform: rotate(45deg);
+  display: none;
 }
 #highlights{
   position: relative;
