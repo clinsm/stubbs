@@ -45,7 +45,7 @@
         <a href="#highlights">
           <div class="explore-button" align = "center">
             <span>Explore</span>
-            <div class="down-arrow">
+            <div class="down-arrow" id="down-arrow">
             </div>
           </div>
         </a>
@@ -125,6 +125,20 @@
 
       },false);
     }
+
+    //fade in explore arrow
+    $("#down-arrow").fadeIn("slow");
+  //  setTimeout(function(){
+      //  $('#down-arrow').fadeOut("slow");}, 1000);
+
+        var fading_arrow = $('#down-arrow');
+            setInterval(function () {
+                fading_arrow.fadeIn(1000, function () {
+                    fading_arrow.fadeOut(1500, function () {
+                        fading_arrow.fadeIn(1500)
+                    });
+                });
+            }, 5000);
   });
   </script>
 </html>
