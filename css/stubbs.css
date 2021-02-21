@@ -120,6 +120,58 @@ a{
 #highlights{
   position: relative;
   height: 800px;
+  background: rgb(241, 241, 241);
+}
+.highlight-label a{
+  display: none;
+}
+.match{
+  display: flex;
+  padding: 50px;
+}
+#tournament-label{
+  width: 80%;
+  font-size: 30px;
+  color: rgb(70, 70, 70);
+}
+.status{
+  margin: auto;
+  width: 20%;
+  text-align: center;
+}
+.status span{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  color: rgb(56, 86, 99);
+}
+.status span:first-child{
+  background: red;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  animation: live 2s ease-in-out 0s infinite;
+}
+@keyframes live {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.upcoming-teams{
+  background: red;
+  display: flex;
+  justify-content: space-between;
+
+}
+.teamX{
+  background: green;
+  margin: auto;
 }
 /*screens: start of greater than 1024 screens*/
 @media only screen and (min-width: 1590px) {
